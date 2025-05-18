@@ -22,7 +22,7 @@ namespace rabbitmq基本消费模型生产者
             {
                 input = Console.ReadLine();
                 var message=Encoding.UTF8.GetBytes(input);
-                channel.BasicPublish("","hello1",null,message);
+                channel.BasicPublish("","hello严鹏",null,message);
 
             } while (input.Trim().ToLower()!="exit");
 
