@@ -25,7 +25,7 @@ namespace rabbimq基本消费模型消费者
                 channel.BasicAck(ea.DeliveryTag,false);
             };
             channel.BasicConsume("hello1", false,consumer);
-            Console.WriteLine("消费者张坤宁已经启动");
+            Console.WriteLine("消费者张坤宁1已经启动");
             Console.ReadKey();
 
         }
