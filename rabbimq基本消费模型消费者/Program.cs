@@ -26,6 +26,7 @@ namespace rabbimq基本消费模型消费者
             };
             channel.BasicConsume("hello1", false,consumer);
             Console.WriteLine("消费者张坤宁2222已经启动");
+            Console.WriteLine("消费者张坤宁2222已经启动");
             Console.ReadKey();
 
         }
