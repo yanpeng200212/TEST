@@ -21,7 +21,7 @@ namespace rabbimq基本消费模型消费者
             consumer.Received += (ch, ea) =>
             {
                 var message = Encoding.UTF8.GetString(ea.Body.ToArray());
-                Console.WriteLine("收到消息：" + message);
+                Console.WriteLine("收到消息1：" + message);
                 channel.BasicAck(ea.DeliveryTag,false);
             };
             channel.BasicConsume("hello1", false,consumer);
